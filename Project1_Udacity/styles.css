@@ -1,0 +1,164 @@
+@import "style_header.css";
+@import "style_map.css";
+@import "style_framework.css";
+@import "style_ds.css";
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);
+  }
+
+title{
+    font-size: small;
+    font-weight: bold;
+}
+
+body{
+    font-family:'Courier New', Courier, monospace,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+blockquote{
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+button {
+    background-color:coral; /* Green */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+  }
+
+.sidebox{
+    background-color:rgb(255, 236, 230);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size:small;
+    border-radius: 5px;
+}
+
+.blogContent{
+    background-color:rgb(255, 242, 229);
+    color:#444;
+    padding: 25px;
+    border-radius: 5px;
+    background-position: 50%;
+}
+
+
+
+a{
+    display: flex;
+    color: white;
+    font-weight: bold;
+    text-decoration-line: none;
+}
+
+a:hover{
+    font-size: larger;
+}
+
+#backToMain{
+    align-self: start;
+}
+
+#fb{
+    display: flex;
+    align-items: left;
+    color: black;
+
+}
+#linkedin{
+    display: flex;
+    align-items:flex-start;
+    color: black;
+}
+
+h2{
+    font-size: large;
+    align-self:center;
+}
+span{
+    font-weight: bolder;
+    color: black;
+}
+
+.sidebar{
+    grid-area: sd;
+    background-color: white;
+}
+
+.footer{
+    grid-area: ft;
+    background-color:brown;
+    margin: 1px;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.link{
+    color: white;
+    display: flex;
+    font-size: x-small;
+    justify-content: center;
+
+}
+
+#nz{
+    background-image: url("img/nz.jpg");
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    font-size: X-large;
+}
+
+#au{
+    background-image: url("img/au.jpg");
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    font-size: X-large;
+}
+
+#jp{
+    background-image: url("img/jp.jpg");
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    font-size: X-large;
+}
+
+#us{
+    background-image: url("img/us.jpg");
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    font-size: X-large;
+}
+
+#designSystem{
+    font-weight: 200;
+    text-decoration-line:underline;
+    justify-content:center;
+    align-items:center;
+}
+
+i{
+    font-size: 24px;
+}
+
+i:hover{
+    font-size: 24px;
+    color: darkseagreen;
+}

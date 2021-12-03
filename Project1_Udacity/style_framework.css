@@ -1,0 +1,82 @@
+/* in small screen */
+.container{
+    display: grid;
+    padding: auto;
+    margin: 1px;
+    grid-template-columns: 130px, 770px;
+    grid-template-rows: 115px 900px 50px;
+    grid-template-areas:
+    "hd hd"
+    "sd main"
+    "ft ft"
+}
+
+/* in middle screen */
+@media(min-width:801px) and (max-width:1100px) {
+    .container{
+        display: grid;
+        padding: auto;
+        margin: 10px;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: 115px 700px 50px;
+        grid-template-areas:
+        "hd hd hd hd hd"
+        "sd sd main main main"
+        "ft ft ft ft ft";
+    }
+}
+
+/* in large screen */
+@media(min-width:1101px) {
+    .container{
+        font-family:'Courier New', Courier, monospace;
+        display: grid;
+        padding: auto;
+        margin: 10px;
+        grid-template-columns: repeat(7,1fr);
+        grid-template-rows: 115px 700px 50px;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd"
+        "sd sd sd main main main main"
+        "ft ft ft ft ft ft ft";
+    }
+}
+
+/* for small screen */
+.content{
+    grid-area: main;
+    display: grid;
+    grid-gap:10px;
+    border-radius: 5px;
+    grid-template-rows:  40px;
+    background-color:rgb(255, 242, 229);
+    color:#444;
+    padding: 25px;
+}
+
+@media (min-width:800px) {
+    .content{
+        grid-area: main;
+        display: grid;
+        grid-gap:10px;
+        border-radius: 5px;
+        grid-auto-rows: minmax(250px,355px);
+        grid-template-columns: 50% 50%;
+        background-color:rgb(255, 242, 229);
+        color:#444;
+        padding: 25px;
+    }
+}
+
+
+
+.contentbox{
+    display:flex;
+    grid-gap: 20px;
+    width: 100%;
+    border-radius: 7px;
+    border-image: fill;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
