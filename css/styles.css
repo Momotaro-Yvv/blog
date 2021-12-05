@@ -115,36 +115,32 @@ span{
 
 }
 
-#nz{
-    background-image: url("img/nz.jpg");
+img{
+    width: 30%;
+}
+
+.imgs{
     background-size: contain;
     background-position: 50%;
     background-repeat: no-repeat;
     font-size: X-large;
+}
+
+/* images as as a background image of links */
+#nz{
+    background-image: url("../img/nz.jpg");
 }
 
 #au{
-    background-image: url("img/au.jpg");
-    background-size: contain;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    font-size: X-large;
+    background-image: url("../img/au.jpg");
 }
 
 #jp{
-    background-image: url("img/jp.jpg");
-    background-size: contain;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    font-size: X-large;
+    background-image: url("../img/jp.jpg");
 }
 
 #us{
-    background-image: url("img/us.jpg");
-    background-size: contain;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    font-size: X-large;
+    background-image: url("../img/us.jpg");
 }
 
 #designSystem{
